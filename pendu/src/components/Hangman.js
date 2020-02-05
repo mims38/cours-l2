@@ -9,8 +9,9 @@ import step5 from './images/5.jpg';
 import step6 from './images/6.jpg';
 
 const API = 'https://api.github.com';
-const GIST = '';
+const GIST = 'gists/ba4c263314f47a992ea33938d9241113';
 const TOKEN = '';
+
 
 class Hangman extends Component {
   static defaultProps = {
@@ -21,6 +22,7 @@ class Hangman extends Component {
   }
 
   componentDidMount() {
+    fetch('https://api.github.com/gists/ba4c263314f47a992ea33938d9241113').then(results => results.json()).then(json => console.log(json));
   }
 
   async fetchResults() {

@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+.texteCouleur{
+  color: black;
+  font-family: "PT Sans";
+}
+.container{
+  height: 100vh;
+  width: 100%;
+}
